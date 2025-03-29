@@ -38,13 +38,9 @@ public class UsersController : ControllerBase
         {
             return StatusCode(StatusCodes.Status500InternalServerError, new ResponseErrorMensageJson
             {
-                Errors = new List<string> { "Erro Desconhecido" }
+                Errors = ["Erro Desconhecido"]
             });
         }
 
     }
-
-  
-    
-
 }

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using NLWLibary.Api.Entities;
+using NLWLibary.Api.Domain.Entities;
 using NLWLibary.Api.Infraestructure;
 using NLWLibrary.Communication.Requests;
 using NLWLibrary.Communication.Responses;
@@ -28,7 +28,7 @@ public class RegisterUserUseCase
 
         return new ResponseRegisteredUserJson
         {
-
+            Name = request.Name,
         };
     }
     private void Validate(RequestUserJson request) 

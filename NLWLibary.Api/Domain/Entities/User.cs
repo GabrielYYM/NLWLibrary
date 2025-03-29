@@ -1,4 +1,4 @@
-﻿namespace NLWLibary.Api.Entities
+﻿namespace NLWLibary.Api.Domain.Entities
 {
     public class User
     {
